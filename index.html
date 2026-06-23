@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="no">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Roterud G2014 – lagportal</title>
+    <meta
+      name="description"
+      content="Testside for en samlet informasjonsportal for Roterud G2014 med treninger, kamper, dugnader, turneringer og trenerplaner."
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <nav class="topbar" aria-label="Hovednavigasjon">
+        <a class="brand" href="#top" aria-label="Til toppen">
+          <span class="brand__mark">R</span>
+          <span>
+            <strong>Roterud G2014</strong>
+            <small>Lagportal – testutkast</small>
+          </span>
+        </a>
+        <div class="topbar__links">
+          <a href="#losning">Løsning</a>
+          <a href="#kalender">Kalender</a>
+          <a href="#plan">Plan</a>
+          <a href="#github">GitHub</a>
+        </div>
+      </nav>
+
+      <section id="top" class="hero__content">
+        <p class="eyebrow">Fra spredt feed og chat til én oppdatert lagflate</p>
+        <h1>Én nettside som samler alt foreldre, trenere og lagledere trenger.</h1>
+        <p class="hero__lead">
+          Dette er et første løsningsforslag og en klikkbar testside for Roterud 2014 guttelag.
+          Målet er å gjøre hverdagen enklere: treninger, kamper, kampverter, dommere,
+          dugnader, turneringer og treneropplegg på ett sted.
+        </p>
+        <div class="hero__actions">
+          <a class="button button--primary" href="#kalender">Se testkalender</a>
+          <a class="button button--secondary" href="#github">Hva trengs i GitHub?</a>
+        </div>
+      </section>
+    </header>
+
+    <main>
+      <section class="section" id="losning">
+        <div class="section__intro">
+          <p class="eyebrow">Løsningsforslag</p>
+          <h2>En webapp som oppfører seg som en app – uten appbutikk.</h2>
+          <p>
+            Første versjon kan være en responsiv nettside publisert med delbar URL. Etter hvert
+            kan den bygges ut som PWA, slik at foreldre kan lagre den på mobilens hjemskjerm og
+            få rask tilgang til siste oppdaterte informasjon.
+          </p>
+        </div>
+
+        <div class="cards cards--three">
+          <article class="card">
+            <span class="card__icon">📅</span>
+            <h3>Felles kalender</h3>
+            <p>Treninger, kamper, turneringer, dugnader og frister samlet i én oversikt.</p>
+          </article>
+          <article class="card">
+            <span class="card__icon">⚽</span>
+            <h3>Kampkort</h3>
+            <p>Sted, oppmøte, avreise, kampvert, dommer, lagleder og lenke til terminliste.</p>
+          </article>
+          <article class="card">
+            <span class="card__icon">🧑‍🏫</span>
+            <h3>Trenerrom</h3>
+            <p>Økter, øvelser og fokusområder kan deles strukturert med trenere og hjelpetrenere.</p>
+          </article>
+          <article class="card">
+            <span class="card__icon">🙋</span>
+            <h3>Oppgavefordeling</h3>
+            <p>Kampverter, kioskvakter, dugnadsvakter og turneringsroller synlig for alle.</p>
+          </article>
+          <article class="card">
+            <span class="card__icon">🔔</span>
+            <h3>Viktig nå</h3>
+            <p>Toppliste med de 3–5 viktigste beskjedene, så ingen må lete i chatter.</p>
+          </article>
+          <article class="card">
+            <span class="card__icon">📱</span>
+            <h3>Mobil først</h3>
+            <p>Designet for mobilen på sidelinjen, men fungerer like godt på PC og nettbrett.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section section--tint" id="kalender">
+        <div class="dashboard">
+          <div class="panel panel--wide">
+            <p class="eyebrow">Testside</p>
+            <h2>Ukeoversikt</h2>
+            <div class="notice">
+              <strong>Viktig nå:</strong> Husk å melde fra om fravær til kamp senest torsdag kl. 18:00.
+            </div>
+            <div class="timeline">
+              <article class="event event--training">
+                <time datetime="2026-06-24">Ons 24. juni · 17:30–19:00</time>
+                <h3>Trening – Røyslimoen kunstgress</h3>
+                <p>Fokus: pasningsspill, overtall og avslutninger. Gruppe A trener med G2013 siste 30 min.</p>
+                <ul>
+                  <li>Ansvarlig trener: Anders</li>
+                  <li>Utstyr: kjegler, vester, 8 baller</li>
+                </ul>
+              </article>
+              <article class="event event--match">
+                <time datetime="2026-06-27">Lør 27. juni · oppmøte 10:15</time>
+                <h3>Kamp mot Lillehammer FK – Stampesletta bane 2</h3>
+                <p>Kampstart 11:00. Avreise fra Roterud klubbhus 09:45 for de som kjører felles.</p>
+                <ul>
+                  <li>Kampvert: Familie Hansen</li>
+                  <li>Dommer: settes opp av klubben</li>
+                  <li>Lagleder: Mari</li>
+                </ul>
+              </article>
+              <article class="event event--dugnad">
+                <time datetime="2026-06-29">Man 29. juni · 18:00–20:00</time>
+                <h3>Dugnad – klargjøring til miniturnering</h3>
+                <p>Fordeling av kiosk, rigg, rydding og parkeringsvakter publiseres her når listen er klar.</p>
+              </article>
+            </div>
+          </div>
+
+          <aside class="panel">
+            <p class="eyebrow">Neste kamp</p>
+            <h2>Kampkort</h2>
+            <dl class="factlist">
+              <div><dt>Motstander</dt><dd>Lillehammer FK</dd></div>
+              <div><dt>Sted</dt><dd>Stampesletta bane 2</dd></div>
+              <div><dt>Oppmøte</dt><dd>10:15</dd></div>
+              <div><dt>Kampvert</dt><dd>Familie Hansen</dd></div>
+              <div><dt>Lagleder</dt><dd>Mari</dd></div>
+            </dl>
+            <a class="button button--full" href="#plan">Se realiseringsplan</a>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section" id="plan">
+        <div class="section__intro">
+          <p class="eyebrow">Realiseringsplan</p>
+          <h2>Foreslått vei fra testside til lagplattform.</h2>
+        </div>
+        <ol class="steps">
+          <li><strong>Avklare informasjonsmodell:</strong> hvilke felt trengs for trening, kamp, dugnad, turnering og beskjed?</li>
+          <li><strong>Lage MVP:</strong> statisk webapp med manuell redigering av innhold, publisert på GitHub Pages.</li>
+          <li><strong>Teste med Roterud G2014:</strong> 2–4 uker med foreldre, lagledere og trenere. Samle forbedringsønsker.</li>
+          <li><strong>Legge til enkel administrasjon:</strong> data i JSON, Google Sheets, Sanity, Supabase eller annet lett CMS.</li>
+          <li><strong>Gjøre den skalerbar:</strong> støtte flere lag, roller, filtrering og gjenbrukbare maler.</li>
+          <li><strong>PWA og varsling:</strong> hjemskjermikon, offline-cache og eventuelt push/e-post-varsler senere.</li>
+        </ol>
+      </section>
+
+      <section class="section section--dark" id="github">
+        <div class="section__intro">
+          <p class="eyebrow">Delbar test-URL</p>
+          <h2>Dette trengs i GitHub for å vise testsiden.</h2>
+        </div>
+        <div class="github-grid">
+          <article>
+            <h3>1. Repository</h3>
+            <p>Legg denne koden i et GitHub-repository, for eksempel <code>foreldreportal</code>.</p>
+          </article>
+          <article>
+            <h3>2. GitHub Pages</h3>
+            <p>Aktiver Pages fra branch <code>main</code> eller <code>work</code>, mappe <code>/root</code>.</p>
+          </article>
+          <article>
+            <h3>3. Delbar lenke</h3>
+            <p>Etter publisering får dere en URL som kan deles med foreldre og trenere for test.</p>
+          </article>
+          <article>
+            <h3>4. Videre utvikling</h3>
+            <p>Opprett issues for ønsker: kalenderimport, påmelding, roller, admin og flere lag.</p>
+          </article>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

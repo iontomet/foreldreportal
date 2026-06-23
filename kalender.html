@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="no">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Kalender – Roterud G2014</title>
+    <meta
+      name="description"
+      content="Uke- og månedskalender for Roterud G2014 med eksempelaktiviteter for treninger, kamper, dugnader og turneringer."
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="page">
+    <header class="subhero">
+      <nav class="topbar" aria-label="Hovednavigasjon">
+        <a class="brand" href="index.html" aria-label="Til forsiden">
+          <span class="brand__mark">R</span>
+          <span>
+            <strong>Roterud G2014</strong>
+            <small>Kalender</small>
+          </span>
+        </a>
+        <div class="topbar__links">
+          <a href="index.html">Forside</a>
+          <a href="index.html#losning">Løsning</a>
+          <a href="index.html#plan">Plan</a>
+        </div>
+      </nav>
+      <div class="subhero__content">
+        <p class="eyebrow">Kalender</p>
+        <h1>Velg ukeplan eller månedskalender.</h1>
+        <p class="hero__lead">
+          Eksempel på hvordan laget kan samle treninger, kamper, dugnader, turneringer og viktige frister i én oversikt.
+        </p>
+      </div>
+    </header>
+
+    <main class="section calendar-page">
+      <section class="calendar-switch" aria-label="Kalendervisning">
+        <input type="radio" name="view" id="week-view" checked />
+        <input type="radio" name="view" id="month-view" />
+
+        <div class="view-toggle" role="tablist" aria-label="Velg visning">
+          <label for="week-view" role="tab">Ukeplan</label>
+          <label for="month-view" role="tab">Måned</label>
+        </div>
+
+        <div class="calendar-toolbar">
+          <div>
+            <p class="eyebrow">Juni 2026</p>
+            <h2>Roterud G2014 aktivitetskalender</h2>
+          </div>
+          <a class="button button--primary" href="index.html#kalender">Tilbake til forsiden</a>
+        </div>
+
+        <section class="week-view calendar-view" aria-labelledby="week-heading">
+          <h2 id="week-heading" class="sr-only">Ukeplan for uke 26</h2>
+          <div class="week-grid">
+            <article class="day-card">
+              <h3>Mandag 22. juni</h3>
+              <p class="empty-state">Ingen planlagte aktiviteter.</p>
+            </article>
+            <article class="day-card day-card--active">
+              <h3>Tirsdag 23. juni</h3>
+              <div class="activity activity--training">
+                <time>17:00–18:30</time>
+                <strong>Trening – Roterud kunstgress</strong>
+                <span>Fokus: førstetouch, vending og smålagsspill.</span>
+              </div>
+              <div class="activity activity--info">
+                <time>20:00</time>
+                <strong>Frist: kampfravær</strong>
+                <span>Gi beskjed i Spond/portal hvis spiller ikke kan delta lørdag.</span>
+              </div>
+            </article>
+            <article class="day-card day-card--active">
+              <h3>Onsdag 24. juni</h3>
+              <div class="activity activity--training">
+                <time>17:30–19:00</time>
+                <strong>Trening – Røyslimoen kunstgress</strong>
+                <span>Gruppe A trener med G2013 siste 30 minutter.</span>
+              </div>
+            </article>
+            <article class="day-card">
+              <h3>Torsdag 25. juni</h3>
+              <div class="activity activity--dugnad">
+                <time>18:00–19:00</time>
+                <strong>Kort dugnadsmøte</strong>
+                <span>Fordele kiosk, rigg og parkeringsvakter til miniturnering.</span>
+              </div>
+            </article>
+            <article class="day-card">
+              <h3>Fredag 26. juni</h3>
+              <p class="empty-state">Restitusjon / egentrening.</p>
+            </article>
+            <article class="day-card day-card--active">
+              <h3>Lørdag 27. juni</h3>
+              <div class="activity activity--match">
+                <time>10:15 oppmøte · 11:00 kamp</time>
+                <strong>Kamp mot Lillehammer FK</strong>
+                <span>Stampesletta bane 2. Kampvert: Familie Hansen. Lagleder: Mari.</span>
+              </div>
+            </article>
+            <article class="day-card day-card--active">
+              <h3>Søndag 28. juni</h3>
+              <div class="activity activity--cup">
+                <time>09:30–15:00</time>
+                <strong>Miniturnering – Roterud</strong>
+                <span>Tre kamper, felles lunsj og rydding etter siste kamp.</span>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="month-view calendar-view" aria-labelledby="month-heading">
+          <h2 id="month-heading" class="sr-only">Månedskalender for juni 2026</h2>
+          <div class="month-grid" aria-label="Månedskalender juni 2026">
+            <span class="weekday">Man</span><span class="weekday">Tir</span><span class="weekday">Ons</span><span class="weekday">Tor</span><span class="weekday">Fre</span><span class="weekday">Lør</span><span class="weekday">Søn</span>
+            <div class="month-day"><span>1</span></div>
+            <div class="month-day"><span>2</span></div>
+            <div class="month-day"><span>3</span><small class="dot dot--training">Trening</small></div>
+            <div class="month-day"><span>4</span></div>
+            <div class="month-day"><span>5</span></div>
+            <div class="month-day"><span>6</span><small class="dot dot--match">Kamp</small></div>
+            <div class="month-day"><span>7</span></div>
+            <div class="month-day"><span>8</span></div>
+            <div class="month-day"><span>9</span><small class="dot dot--training">Trening</small></div>
+            <div class="month-day"><span>10</span></div>
+            <div class="month-day"><span>11</span><small class="dot dot--dugnad">Dugnad</small></div>
+            <div class="month-day"><span>12</span></div>
+            <div class="month-day"><span>13</span><small class="dot dot--cup">Cup</small></div>
+            <div class="month-day"><span>14</span></div>
+            <div class="month-day"><span>15</span></div>
+            <div class="month-day"><span>16</span><small class="dot dot--training">Trening</small></div>
+            <div class="month-day"><span>17</span><small class="dot dot--training">Trening</small></div>
+            <div class="month-day"><span>18</span></div>
+            <div class="month-day"><span>19</span></div>
+            <div class="month-day"><span>20</span><small class="dot dot--match">Kamp</small></div>
+            <div class="month-day"><span>21</span></div>
+            <div class="month-day month-day--today"><span>22</span></div>
+            <div class="month-day"><span>23</span><small class="dot dot--training">Trening</small><small class="dot dot--info">Frist</small></div>
+            <div class="month-day"><span>24</span><small class="dot dot--training">Trening</small></div>
+            <div class="month-day"><span>25</span><small class="dot dot--dugnad">Dugnadsmøte</small></div>
+            <div class="month-day"><span>26</span></div>
+            <div class="month-day"><span>27</span><small class="dot dot--match">Kamp</small></div>
+            <div class="month-day"><span>28</span><small class="dot dot--cup">Turnering</small></div>
+            <div class="month-day"><span>29</span><small class="dot dot--dugnad">Dugnad</small></div>
+            <div class="month-day"><span>30</span><small class="dot dot--training">Trening</small></div>
+          </div>
+        </section>
+      </section>
+    </main>
+  </body>
+</html>
